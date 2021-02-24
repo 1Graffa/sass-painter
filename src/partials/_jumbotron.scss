@@ -1,0 +1,30 @@
+.jumbotron{
+    background-image: url("../img/bg-painter-home.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: $jumboH;
+    position: relative;
+    .text{
+        transform: translatey(-50%);
+        position: absolute;
+        top: 50%;
+        width: 40%;
+        line-height: 2;
+        img{
+            width: 250px;
+        }
+        p{
+            font-size: 22px;
+        }
+        em{
+            color: $strong;
+        }
+        em:last-child{
+            text-transform: capitalize;
+        }
+        strong{
+            color: lighten($strong, 10%);
+        }
+    }   
+}

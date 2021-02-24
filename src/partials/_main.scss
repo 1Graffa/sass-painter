@@ -1,0 +1,67 @@
+main{
+    background-color: $bgMain;
+    h2{
+        text-align: center;
+        padding-top:50px;
+    }
+    .paintings{
+        padding: $paddingMain;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .box{
+            background: $headerTopTextHover;
+            width:32%;
+            img{
+                width: 100%;
+            }
+        }
+        .txt{
+            padding: $paddingBox;
+            line-height: 1.6;
+            em{
+                color:blue;
+            }
+            a{
+                text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+            }
+        }
+    }
+    .promotions{
+        color: $headerTopTextHover;
+        .image-promo{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+        .box-promo{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .text-promo{
+                line-height: 1.6;
+                padding: $paddingBox;
+                width: 50%;
+            }
+            .bg-grey{
+                background:#3C3C3C ;
+            }
+            .bg-purple{
+                background:#3C1567 ;
+            }
+            .bg-special{
+                background-image: url("../img/bg-wacom.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .bg-blue{
+                background:#0072BC ;
+            }
+        }
+    }
+}

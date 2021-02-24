@@ -1,0 +1,55 @@
+header{
+    font-size: $fontHeader;
+    height: $altezzaHeader;
+    .#{&}-top{
+        height: $altezzaHeaderTop;
+        background-color: $sfondoHeaderTop;
+    }
+    ul{
+        list-style: none;
+        @include flex(flex-end);
+        li{
+            i{
+                    color:#009CFF;
+            }
+                    i:not(:last-child){
+                padding-right: 10px ;
+            }
+            padding: $paddingHeader;
+            padding-right: 30px;
+            a{
+                color:$headerTopText;
+                text-decoration: none;
+            &:hover{
+                color:white;
+                text-decoration: underline;
+            }
+            } 
+        } 
+    }
+    .#{&}-bottom{
+        height: $altezzaHeaderTop;
+        background-color: $sfondoHeaderTop;
+        nav{
+            ul{
+                @include flex(flex-start);
+                li{
+                color: $headerTopTextHover;
+                
+                    &:hover:not(:first-child){
+                    color: $sfondoHeaderTop;
+                    background-color:  $headerTopTextHover ;
+                    }
+                }
+                img{
+                    width: 100px;
+                }
+                i{
+                    margin-left: 3px;
+                    font-size: 10px;
+                    color: $headerTopText;
+                }
+            }
+        }
+    }
+}

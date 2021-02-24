@@ -1,0 +1,30 @@
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid black;
+    margin:18px 24px 0 0;
+}
+.button-t{
+    background-color: transparent;
+    color: black;
+    &:hover{
+    background-color: transparent;
+    color: black;
+    }
+}
+.button-b{
+    background-color: black;
+    color: white;
+    &:hover{
+    background-color: lighten(black, 10%);
+    }
+}
+.button-w{
+    background-color: white;
+    color: black;
+    &:hover{
+    background-color: darken(white, 10%);
+    }
+}

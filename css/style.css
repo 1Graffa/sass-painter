@@ -1,0 +1,200 @@
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid black;
+  margin: 18px 24px 0 0;
+}
+
+.button-t {
+  background-color: transparent;
+  color: black;
+}
+.button-t:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.button-b {
+  background-color: black;
+  color: white;
+}
+.button-b:hover {
+  background-color: #1a1a1a;
+}
+
+.button-w {
+  background-color: white;
+  color: black;
+}
+.button-w:hover {
+  background-color: #e6e6e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 100px;
+}
+
+header {
+  font-size: 14px;
+  height: 100px;
+}
+header .header-top {
+  height: 50px;
+  background-color: black;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header ul li {
+  padding: 10px 0;
+  padding-right: 30px;
+}
+header ul li i {
+  color: #009CFF;
+}
+header ul li i:not(:last-child) {
+  padding-right: 10px;
+}
+header ul li a {
+  color: darkgrey;
+  text-decoration: none;
+}
+header ul li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+header .header-bottom {
+  height: 50px;
+  background-color: black;
+}
+header .header-bottom nav ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header .header-bottom nav ul li {
+  color: white;
+}
+header .header-bottom nav ul li:hover:not(:first-child) {
+  color: black;
+  background-color: white;
+}
+header .header-bottom nav ul img {
+  width: 100px;
+}
+header .header-bottom nav ul i {
+  margin-left: 3px;
+  font-size: 10px;
+  color: darkgrey;
+}
+
+.jumbotron {
+  background-image: url("../img/bg-painter-home.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+.jumbotron .text {
+  transform: translatey(-50%);
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  line-height: 2;
+}
+.jumbotron .text img {
+  width: 250px;
+}
+.jumbotron .text p {
+  font-size: 22px;
+}
+.jumbotron .text em {
+  color: #CB26B5;
+}
+.jumbotron .text em:last-child {
+  text-transform: capitalize;
+}
+.jumbotron .text strong {
+  color: #dd47c9;
+}
+
+main {
+  background-color: #E8E8E8;
+}
+main h2 {
+  text-align: center;
+  padding-top: 50px;
+}
+main .paintings {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .paintings .box {
+  background: white;
+  width: 32%;
+}
+main .paintings .box img {
+  width: 100%;
+}
+main .paintings .txt {
+  padding: 10px 15px;
+  line-height: 1.6;
+}
+main .paintings .txt em {
+  color: blue;
+}
+main .paintings .txt a {
+  text-decoration: none;
+}
+main .paintings .txt a:hover {
+  text-decoration: underline;
+}
+main .promotions {
+  color: white;
+}
+main .promotions .image-promo {
+  width: 50%;
+}
+main .promotions .image-promo img {
+  width: 100%;
+}
+main .promotions .box-promo {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .promotions .box-promo .text-promo {
+  line-height: 1.6;
+  padding: 10px 15px;
+  width: 50%;
+}
+main .promotions .box-promo .bg-grey {
+  background: #3C3C3C;
+}
+main .promotions .box-promo .bg-purple {
+  background: #3C1567;
+}
+main .promotions .box-promo .bg-special {
+  background-image: url("../img/bg-wacom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .promotions .box-promo .bg-blue {
+  background: #0072BC;
+}
